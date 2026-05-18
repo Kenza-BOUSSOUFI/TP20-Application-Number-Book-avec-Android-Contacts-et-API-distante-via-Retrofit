@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnFetchLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importer Contacts" />
+
+    <Button
+        android:id="@+id/btnPushToServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Synchroniser"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputSearchQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom ou téléphone..."
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnTriggerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lancer la recherche"
+        android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listDisplayArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
